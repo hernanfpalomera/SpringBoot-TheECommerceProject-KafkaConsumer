@@ -1,0 +1,12 @@
+package com.TheECommerce.SpringBootTheECommerceProjectKafkaConsumer.repository.paymentbroker;
+
+import com.TheECommerce.SpringBootTheECommerceProjectKafkaConsumer.entity.orderservices.OrderServiceEntity;
+import com.TheECommerce.SpringBootTheECommerceProjectKafkaConsumer.entity.paymentbroker.PaymentBrokerEntity;
+import com.TheECommerce.SpringBootTheECommerceProjectKafkaConsumer.model.paymentbroker.PaymentBroker;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface PaymentBrokerRepository extends JpaRepository<PaymentBrokerEntity, Long> {
+
+}

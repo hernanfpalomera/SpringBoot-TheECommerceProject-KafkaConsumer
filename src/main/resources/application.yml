@@ -1,0 +1,22 @@
+spring:
+  profiles: #Application profiles configuration
+    active: ${APP_PROFILE:local}
+  kafka: #Kafka consumer configurations
+    bootstrap-servers: localhost:29092
+    group-id: groupId
+  datasource: #MySQL Database Configuration
+    url: jdbc:mysql://localhost:3306/spring_the_ecommerce_project
+    username: root
+    password: KCUdBHsbEXG6ykDNL7uTzS5f9Pjt2qYFaQcNEW5JRyx8sGPDTVZpu72LnMmUdC4hLUfQYpRtrKnXGP4FCTb6Ej8xumSWHye9W3rGbJxmQ7zt5eBR68s4H9DFVZYqjf2UfshyqkJHXGpzUZ9D54w82aRgnCYALNuF
+    ddl-auto: create
+  jpa: #JPA Configuration
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.MySQL5Dialect
+      naming_strategy: org.hibernate.cfg.ImprovedNamingStrategy
+
+server:
+  port: 1011
+
+
+
